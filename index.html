@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrapを使ったシンプルなサイト</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8k/R1QpZNk+QOD6uX3vV4smkDaQm0jQAkR+rU+S4Q1n3xlk845qGqX+YSDQ" crossorigin="anonymous">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bootstrapを使ったサイト</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">サービス</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">会社概要</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="hero.jpg" alt="メインビジュアル" class="img-fluid">
+      <h2>キャッチコピー</h2>
+      <p>サブタイトル</p>
+      <a href="#" class="btn btn-primary">詳しく見る</a>
+    </section>
+
+    <section class="about">
+      <h2>会社概要</h2>
+      <p>会社紹介文</p>
+    </section>
+
+    <section class="service">
+      <h2>サービス</h2>
+      <ul class="list-group">
+        <li class="list-group-item">サービス1</li>
+        <li class="list-group-item">サービス2</li>
+        <li class="list-group-item">サービス3</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>お問い合わせ</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="例：山田 太郎">
+          <small id="nameHelp" class="form-text text-muted">必須項目です</small>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="例：example@mail.com">
+          <small id="emailHelp" class="form-text text-muted">必須項目です</small>
+        </div>
+        <div class="form-group">
+          <label for="message">お問い合わせ内容</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span>&copy; 2024 Bootstrapを使ったサイト</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXSqoD/x0146geklN1n2rDF5w3515jY8yEuZzawxW18i65kL5qag
+

@@ -1,2 +1,67 @@
-<h1>Hello World</h1>
-<h2>test</h2>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>シンプルサイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>シンプルサイト</h1>
+    <nav>
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">サービス</a></li>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="hero.jpg" alt="メインビジュアル">
+      <h2>キャッチコピー</h2>
+      <p>サブタイトル</p>
+      <a href="#" class="btn">詳しく見る</a>
+    </section>
+
+    <section class="about">
+      <h2>会社概要</h2>
+      <p>会社紹介文</p>
+    </section>
+
+    <section class="service">
+      <h2>サービス</h2>
+      <ul>
+        <li>サービス1</li>
+        <li>サービス2</li>
+        <li>サービス3</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>お問い合わせ</h2>
+      <form action="#">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 シンプルサイト</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
